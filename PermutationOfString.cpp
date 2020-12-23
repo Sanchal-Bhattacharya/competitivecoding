@@ -1,0 +1,24 @@
+#include<iostream>
+using namespace std;
+void permute(char str[],int i)
+{
+    if(str[i]=='\0'){
+        cout<<str<<endl;
+        return;
+    }
+    for(int j=i;str[j]!='\0';j++){
+        swap(str[i],str[j]);
+        permute(str,i+1);
+        swap(str[i],str[j]);
+    }
+}
+int main()
+{
+    char str[50];
+    int i=0;
+    cout<<"Input string:";
+    cin >> str;
+    cout<<"Output combos:"<<endl;
+    permute(str,i);
+    return 0;
+}
