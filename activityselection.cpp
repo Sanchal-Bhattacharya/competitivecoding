@@ -12,7 +12,7 @@ void printMaxActivities(int s[], int f[], int n)
 { 
 	int i, j; 
 
-	printf ("Following activities are selected n:"); 
+	printf ("Following activities are selected n:");
 
 	// The first activity always gets selected 
 	i = 0; 
